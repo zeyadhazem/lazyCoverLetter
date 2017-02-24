@@ -9,11 +9,8 @@ WDAY=$(date +"%A")
 MONTH=$(date +"%B")
 DAY=$(date +"%-d")
 YEAR=$(date +"%Y")
-global="/g'"
-flags="-e"
 
-
-string=$DATE
+read -p "Enter Company Name: "  COMPANY
 
 
 wday_q=s/_wday/
@@ -32,6 +29,15 @@ year_q=s/_year/
 year_q=$year_q$YEAR
 year_q=$year_q/g
 
+year_q=s/_year/
+year_q=$year_q$YEAR
+year_q=$year_q/g
+
+company_q=s/Companyname/
+company_q=$company_q$COMPANY
+company_q=$company_q/g
+
+
 echo $month_q
 
 #echo. %str%
@@ -45,7 +51,7 @@ cat <<- _EOF_						#The input to the command cat is what is between the tags _EO
 _EOF_
 
 
-sed -e $wday_q -e $month_q -e $day_q -e $year_q <mycl.tex >modified.tex
+sed -e $wday_q -e $month_q -e $day_q -e $year_q -e $company_q <mycl.tex >modified.tex
 
 pdflatex -jobname mycl modified
 
