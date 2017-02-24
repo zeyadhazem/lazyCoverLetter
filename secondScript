@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# make_page - A script to produce an HTML file
+
+title="My System Information"		#This is a variable
+RIGHT_NOW=$(date +"%x %r %Z")
+DATE=$(date +"%A, %B %-d, %Y")
+string=$DATE
+
+cat <<- _EOF_						#The input to the command cat is what is between the tags _EOF_
+    $title $HOSTNAME
+    $DATE
+_EOF_
+
+
+echo $string
+
+#sed 's/__date/' $DATE '/g' <mycl.tex >modified.tex
