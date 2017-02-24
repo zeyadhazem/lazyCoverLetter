@@ -46,3 +46,7 @@ _EOF_
 
 
 sed -e $wday_q -e $month_q -e $day_q -e $year_q <mycl.tex >modified.tex
+
+pdflatex -jobname mycl modified
+
+open mycl.pdf
