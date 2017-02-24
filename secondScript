@@ -5,7 +5,39 @@
 title="My System Information"		#This is a variable
 RIGHT_NOW=$(date +"%x %r %Z")
 DATE=$(date +"%A, %B %-d, %Y")
+WDAY=$(date +"%A")
+MONTH=$(date +"%B")
+DAY=$(date +"%-d")
+YEAR=$(date +"%Y")
+global="/g'"
+flags="-e"
+
+
 string=$DATE
+
+
+wday_q=s/_wday/
+wday_q=$wday_q$WDAY
+wday_q=$wday_q/g
+
+month_q=s/_month/
+month_q=$month_q$MONTH
+month_q=$month_q/g
+
+day_q=s/_day/
+day_q=$day_q$DAY
+day_q=$day_q/g
+
+year_q=s/_year/
+year_q=$year_q$YEAR
+year_q=$year_q/g
+
+echo $month_q
+
+#echo. %str%
+#set str=%str:teh=the%
+#echo.%str%
+
 
 cat <<- _EOF_						#The input to the command cat is what is between the tags _EOF_
     $title $HOSTNAME
@@ -13,6 +45,4 @@ cat <<- _EOF_						#The input to the command cat is what is between the tags _EO
 _EOF_
 
 
-echo $string
-
-#sed 's/__date/' $DATE '/g' <mycl.tex >modified.tex
+sed -e $wday_q -e $month_q -e $day_q -e $year_q <mycl.tex >modified.tex
