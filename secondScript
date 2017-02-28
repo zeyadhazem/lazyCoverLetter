@@ -12,7 +12,6 @@ YEAR=$(date +"%Y")
 
 read -p "Enter Company Name: "  COMPANY
 
-
 wday_q=s/_wday/
 wday_q=$wday_q$WDAY
 wday_q=$wday_q/g
@@ -52,6 +51,7 @@ _EOF_
 
 
 sed -e $wday_q -e $month_q -e $day_q -e $year_q -e $company_q <mycl.tex >modified.tex
+
 
 pdflatex -jobname mycl modified
 
