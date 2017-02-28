@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 FEB 2017 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 FEB 2017 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1308,10 +1308,10 @@ Package rerunfilecheck Info: File `mycl.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28422 strings out of 493014
- 524626 string characters out of 6133351
- 580175 words of memory out of 5000000
- 31553 multiletter control sequences out of 15000+600000
+ 28418 strings out of 493014
+ 524534 string characters out of 6133351
+ 580197 words of memory out of 5000000
+ 31549 multiletter control sequences out of 15000+600000
  44737 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,11n,58p,10356b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1329,7 +1329,7 @@ dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2016/texmf-dist/fonts
 ublic/lm/lmsso10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/
 lmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/marvosym/marvo
 sym.pfb>
-Output written on mycl.pdf (1 page, 146700 bytes).
+Output written on mycl.pdf (1 page, 146301 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
