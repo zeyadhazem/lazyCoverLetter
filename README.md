@@ -8,7 +8,7 @@ For now lazy cover letter is only guaranteed to work on mac.
 <i> Setup </i>
 
 1. Download and install MacTex from here http://www.tug.org/mactex/mactex-download.html
-2. Download this repository as zip
+2. Download this repository as zip (From the green button on top of this page that says: clone or download)
 3. Format your cover letter in LateX and follow these guidelines:
 
     a. Wherever you want to put a weekday in your template (Mon-Sun) put the word wday between brackets <> (This will automatically update it)
