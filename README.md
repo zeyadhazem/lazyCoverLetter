@@ -5,7 +5,7 @@ Required Cover Letters can sometimes be annoying, especially if you strongly fee
 
 For now lazy cover letter is only guaranteed to work on mac.
 
-<i> Setup </i>
+<b> Setup </b>
 
 1. Download and install MacTex from here http://www.tug.org/mactex/mactex-download.html
 2. Download this repository as zip (From the green button on top of this page that says: clone or download)
@@ -22,7 +22,7 @@ For now lazy cover letter is only guaranteed to work on mac.
     e. Wherever you want to put a company name put the word company between brackets <> (You will be prompted to enter a company name for every new cover letter)
 4. Name your cover letter mycl.tex and put the script (script.sh) in the same directory where mycl.tex is
 
-<i> What you will do every time you want to generate a new cover letter </i>
+<b> What you will do every time you want to generate a new cover letter </b>
 
 1. In Finder, navigate to the folder containing mycl.tex and the script
 2. Open terminal (hold command and press space, this will pop the spotlight search, then search for terminal)
