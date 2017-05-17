@@ -1,13 +1,18 @@
 # lazyCoverLetter
-Required Cover Letters can sometimes be annoying, especially if you strongly feel that they will not be read by the recruiters anyways. This lazy cover letter project takes your template and substitutes the date, the company name and job title to whatever you specify without you worrying about forgetting to change one of these
+Required Cover Letters can sometimes be annoying, especially if you strongly feel that they will not be read by the recruiters anyways. This lazy cover letter project takes your template and substitutes the date, the company name and job title to whatever you specify without you worrying about forgetting to change one of these.
 
-<b>How does it work</b>
+<b>Features</b>
+<ul>
+<li> Changes all instances of the company name in your document to the new one </li>
+<li> Changes all instances of position title to the new one </li>
+<li> Automatically update the date in the cover letter </li>
+<li> Automatically render your file and save as a PDF </li>
+</ul>
 
-For now lazy cover letter is only guaranteed to work on mac.
 
 <b> Setup </b>
 
-1. Download and install MacTex from here http://www.tug.org/mactex/mactex-download.html
+1. Download and install MacTex from here http://www.tug.org/mactex/mactex-download.html (For now lazy cover letter is only guaranteed to work on mac.)
 2. Download this repository as zip (From the green button on top of this page that says: clone or download)
 3. Format your cover letter in LateX and follow these guidelines:
 
@@ -22,7 +27,7 @@ For now lazy cover letter is only guaranteed to work on mac.
     e. Wherever you want to put a company name put the word company between brackets <> (You will be prompted to enter a company name for every new cover letter)
 4. Name your cover letter mycl.tex and put the script (script.sh) in the same directory where mycl.tex is
 
-<b> What you will do every time you want to generate a new cover letter </b>
+<b> Steps to generate a new cover letter </b>
 
 1. In Finder, navigate to the folder containing mycl.tex and the script
 2. Open terminal (hold command and press space, this will pop the spotlight search, then search for terminal)
